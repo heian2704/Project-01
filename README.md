@@ -15,7 +15,6 @@
 - [Deployment](#deployment)
 - [Extra Requirements](#extra-requirements)
 - [Contributors](#contributors)
-- [License](#license)
 
 ## Introduction
 
