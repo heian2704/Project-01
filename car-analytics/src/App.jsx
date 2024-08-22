@@ -8,11 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Project-01">
       <NavigationBar />
       <Routes>
         {/* Redirect from / to /dashboard */}
-        <Route path="/Project-01" element={<Navigate to="/dashboard" />} />
+        <Route path="/" element={<Navigate to="/dashboard" />} />
         
         {/* Dashboard Route */}
         <Route path="/dashboard" element={<Dashboard />} />
