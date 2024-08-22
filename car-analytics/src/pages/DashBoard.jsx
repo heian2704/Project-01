@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BrandCard from '../components/BrandCard';
 import DashboardTable from '../components/DashBoardTable';
 import PieChartComponent from '../components/PieChart';
@@ -10,10 +10,20 @@ import './Dashboard.css'; // Ensure this file is in the same directory as Dashbo
 
 const Dashboard = () => {
   const [selectedBrand, setSelectedBrand] = useState(null);
-  const [highlightedCars, setHighlightedCars] = useState(() => {
+  const [highlightedCars, setHighlightedCars] = useState([]);
+
+  useEffect(() => {
+    // Load highlighted cars from localStorage
     const savedHighlights = localStorage.getItem('highlightedCars');
-    return savedHighlights ? JSON.parse(savedHighlights) : [];
-  });
+    if (savedHighlights) {
+      setHighlightedCars(JSON.parse(savedHighlights));
+    }
+  }, []);
+
+  useEffect(() => {
+    // Save highlighted cars to localStorage whenever it changes
+    localStorage.setItem('highlightedCars', JSON.stringify(highlightedCars));
+  }, [highlightedCars]);
 
   const { Cars, MMList } = carsData;
 
@@ -28,7 +38,6 @@ const Dashboard = () => {
         ? prevHighlights.filter(highlightedCar => highlightedCar.Cid !== car.Cid)
         : [...prevHighlights, car];
 
-      localStorage.setItem('highlightedCars', JSON.stringify(updatedHighlights));
       return updatedHighlights;
     });
   };

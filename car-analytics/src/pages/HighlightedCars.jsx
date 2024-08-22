@@ -1,19 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
 import CarCard from '../components/CarCard';
 import carsData from '../data/cars.json';
 import './HighlightedCars.css'; // Ensure this file is in the same directory as HighlightedCars.js
 
 const HighlightedCars = () => {
-  const [highlightedCars, setHighlightedCars] = useState(() => {
-    // Load highlighted cars from localStorage if available
-    const savedHighlights = localStorage.getItem('highlightedCars');
-    return savedHighlights ? JSON.parse(savedHighlights) : [];
-  });
-
+  const [highlightedCars, setHighlightedCars] = useState([]);
   const [showRemoveAllModal, setShowRemoveAllModal] = useState(false);
   const [showRemoveOneModal, setShowRemoveOneModal] = useState(false);
   const [selectedCar, setSelectedCar] = useState(null);
+
+  useEffect(() => {
+    // Load highlighted cars from localStorage
+    const savedHighlights = localStorage.getItem('highlightedCars');
+    if (savedHighlights) {
+      setHighlightedCars(JSON.parse(savedHighlights));
+    }
+  }, []);
+
+  useEffect(() => {
+    // Save highlighted cars to localStorage whenever it changes
+    localStorage.setItem('highlightedCars', JSON.stringify(highlightedCars));
+  }, [highlightedCars]);
 
   const handleRemoveAllHighlights = () => {
     setHighlightedCars([]);
@@ -52,7 +60,6 @@ const HighlightedCars = () => {
     <Container fluid className="highlighted-cars-container">
       <header className="text-center mb-4">
         <h1 className="display-4 text-primary">Highlighted Cars</h1>
-        {/* Conditionally render the button based on the presence of highlighted cars */}
         {highlightedCars.length > 0 ? (
           <>
             <Button
@@ -63,20 +70,20 @@ const HighlightedCars = () => {
               Remove All Highlights
             </Button>
             <Row className="mb-5">
-                <Col md={12}>
-                  <div className="car-card-container">
-                    {highlightedCars.map((car) => (
-                      <CarCard
-                        car={car}
-                        carCount={highlightedCars.filter(c => c.Model === car.Model).length}
-                        isHighlighted={true}
-                        onHighlightToggle={() => handleShowRemoveOneModal(car)}
-                        key={car.Cid}
-                      />
-                    ))}
-                  </div>
-                </Col>
-              </Row>
+              <Col md={12}>
+                <div className="car-card-container">
+                  {highlightedCars.map((car) => (
+                    <CarCard
+                      car={car}
+                      carCount={highlightedCars.filter(c => c.Model === car.Model).length}
+                      isHighlighted={true}
+                      onHighlightToggle={() => handleShowRemoveOneModal(car)}
+                      key={car.Cid}
+                    />
+                  ))}
+                </div>
+              </Col>
+            </Row>
           </>
         ) : (
           <div className="text-center mt-4">
