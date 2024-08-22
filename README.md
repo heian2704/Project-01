@@ -78,13 +78,13 @@ To run this project locally:
 ## Usage
 
 - **Dashboard Page:**
-- Table: Displays the number of cars and values by brand and model.
-- Pie Chart: Visualizes the distribution of cars by brand.
-- Stacked Bar Chart: Shows the number of car models for each brand.
+  - Table: Displays the number of cars and values by brand and model.
+  - Pie Chart: Visualizes the distribution of cars by brand.
+  - Stacked Bar Chart: Shows the number of car models for each brand.
   
 - **Highlighted Cars Page:**
-- View Highlighted Cars: Displays a list of highlighted cars.
-- Add/Remove Cars: Manage which cars are highlighted, with persistence across reloads using Local Storage.
+  - View Highlighted Cars: Displays a list of highlighted cars.
+  - Add/Remove Cars: Manage which cars are highlighted, with persistence across reloads using Local Storage.
 
 
    
