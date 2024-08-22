@@ -85,6 +85,30 @@ To run this project locally:
 - **Highlighted Cars Page:**
   - View Highlighted Cars: Displays a list of highlighted cars.
   - Add/Remove Cars: Manage which cars are highlighted, with persistence across reloads using Local Storage.
+ 
+## Screenshots
+
+- ### Dashboard Page
+
+
+- ### Highlighted Cars Page
+
+
+## Deployment
+
+The application is deployed on GitHub Pages and can be accessed at the following link:
+
+[Live Demo](https://heian2704.github.io/Project-01/)
+
+## Extra Requirements
+
+- **Learn and Implement Chart.js**: Used for rendering the pie chart and stacked bar chart on the dashboard page.
+
+## Contributors
+
+- [Hein Thant](https://github.com/heian2704) - GitHub
+- [Thaw Htut Soe](https://github.com/ThawHtutSoe) - GitHub
+
 
 
    
