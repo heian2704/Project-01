@@ -1,0 +1,72 @@
+/* Main Navbar Styles */
+.navbar-custom {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Modern subtle shadow for depth */
+    background-color: #0077ff; /* Bright modern blue background */
+    padding: 0.8rem 2rem; /* Increased padding for a more spacious feel */
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem; /* Larger font size for brand */
+    font-weight: bold; /* Bold font for brand */
+    color: #ffffff; /* White color for brand text */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .navbar-brand:hover {
+    color: #ffc107; /* Gold color on hover for a premium feel */
+  }
+  
+  .nav-links {
+    margin-left: auto; /* Align links to the right */
+  }
+  
+  .nav-link-custom {
+    color: #ffffff; /* White color for nav links */
+    font-size: 1.1rem; /* Slightly larger font size for nav links */
+    margin-right: 20px; /* Space between nav links */
+    transition: color 0.3s ease; /* Smooth color transition */
+    position: relative; /* Position relative to use pseudo-elements */
+  }
+  
+  .nav-link-custom:hover {
+    color: #ffc107; /* Gold color on hover */
+  }
+  
+  .nav-link-custom.active {
+    font-weight: bold; /* Bold the active link */
+  }
+  
+  .nav-link-custom.active::after {
+    content: ''; /* Empty content for pseudo-element */
+    display: block; /* Display block to use as underline */
+    height: 3px; /* Height of the underline */
+    background-color: #ffc107; /* Gold underline for active links */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Align to the left */
+    bottom: -5px; /* Slightly below the link */
+    width: 100%; /* Full width of the nav link */
+    transition: width 0.3s ease; /* Smooth width transition */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove border around toggler */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,...'); /* Custom icon for toggler */
+    filter: invert(1); /* Invert color for a modern look */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .navbar-custom {
+      box-shadow: none; /* Remove shadow on smaller screens */
+      padding: 0.8rem 1.5rem; /* Reduce padding for smaller screens */
+    }
+  
+    .nav-link-custom {
+      margin-right: 0; /* Remove margin on smaller screens */
+      padding: 0.5rem 1rem; /* Increase padding for better touch targets */
+    }
+  }
+  

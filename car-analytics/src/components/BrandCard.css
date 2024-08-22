@@ -1,0 +1,101 @@
+/* src/pages/Dashboard.css */
+
+.dashboard-container {
+    padding: 20px;
+    background: #f0f4f8; /* Light background for a clean look */
+    min-height: 100vh;
+  }
+  
+  /* Header styling */
+  header h1 {
+    font-size: 3rem;
+    color: #007bff; /* Primary color for the title */
+  }
+  
+  /* Section titles */
+  .section-title {
+    font-size: 2rem;
+    color: #333; /* Dark color for section titles */
+    border-bottom: 2px solid #007bff; /* Underline effect */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* Brand card container styling */
+  .brand-card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Fixed 5 cards per row */
+    gap: 5px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    margin: 0; /* Remove negative margin */
+  }
+  
+  
+  /* Car card container styling */
+  .car-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center car cards horizontally */
+  }
+  
+  /* Chart row styling */
+  .chart-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Chart container styling */
+  .chart-container {
+    background: #ffffff; /* White background for charts */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Chart titles */
+  .chart-title {
+    font-size: 1.5rem;
+    color: #007bff; /* Primary color for chart titles */
+    margin-bottom: 20px;
+  }
+  
+  /* Custom card styling */
+  .card {
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Ensure card body has enough padding */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Brand card specific styling */
+  .brand-card {
+    background: #ffffff; /* Card background color */
+    border: 2px solid #007bff; /* Border color for brand cards */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding inside card */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border-color 0.3s;
+  }
+  
+  .brand-card.selected {
+    background-color: #007bff; /* Background color for selected brand */
+    color: white; /* Text color for selected brand */
+    border-color: #0056b3; /* Border color for selected brand */
+  }
+  
+  .brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,98 @@
+.highlighted-cars-container {
+    padding: 20px;
+    background: #f0f4f8;
+    min-height: 100vh;
+  }
+  
+  /* Header styling */
+  .highlighted-cars-container header h1 {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  
+  /* Section titles */
+  .highlighted-cars-container .section-title {
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* Car card container styling */
+  .car-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    gap: 15px;
+    justify-content: start; /* Align items to the start (left) */
+    margin: 0 auto; /* Center the grid container horizontally */
+    max-width: 1200px; /* Optional: set a max-width to prevent stretching */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .car-card-container {
+      grid-template-columns: repeat(3, 1fr); /* Three cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .car-card-container {
+      grid-template-columns: repeat(2, 1fr); /* Two cards per row on small screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .car-card-container {
+      grid-template-columns: repeat(1, 1fr); /* One card per row on extra-small screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .car-card-container {
+      grid-template-columns: 1fr; /* Ensure only one card per row on very small screens */
+    }
+  }
+  
+  /* Custom card styling */
+  .card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Ensure card body has enough padding */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Brand card specific styling */
+  .brand-card {
+    background: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border-color 0.3s;
+  }
+  
+  /* Selected brand card styling */
+  .brand-card.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+  }
+  
+  /* Brand card hover effect */
+  .brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

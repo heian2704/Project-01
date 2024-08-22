@@ -1,0 +1,63 @@
+/* Car Card Styles */
+.car-card {
+  border: 1px solid #c4bcbc; /* Light border color */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  width: 100%; /* Full width */
+  max-width: 300px; /* Maximum width */
+  margin: 10px; /* Margin around the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.car-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.car-card-img {
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Cover the container */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.car-card-content {
+  padding: 15px; /* Increased padding */
+}
+
+.car-card-title {
+  margin: 0 0 10px; /* Margin below title */
+  font-size: 18px; /* Larger font size */
+  font-weight: bold; /* Bold font */
+}
+
+.car-card-text {
+  margin: 5px 0; /* Margin around text */
+  font-size: 14px; /* Font size */
+  color: #555; /* Darker text color */
+}
+
+.car-card.highlighted {
+  border: 2px solid rgb(47, 92, 255); /* Gold border for highlighted cards */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More shadow for highlighted */
+}
+
+/* Add transition for the card image on hover */
+.car-card-img:hover {
+  opacity: 0.9; /* Slight fade on hover */
+}
+/* Highlight button container */
+.highlight-button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* Highlight button styling */
+.highlight-toggle-btn {
+  width: 100%; /* Make button fill the container width */
+  max-width: 150px; /* Set a max width for the button */
+  text-align: center; /* Ensure text is centered */
+}
+
