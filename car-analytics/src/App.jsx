@@ -12,7 +12,7 @@ const App = () => {
       <NavigationBar />
       <Routes>
         {/* Redirect from / to /dashboard */}
-        <Route path="/" element={<Navigate to="/dashboard" />} />
+        <Route path="/Project-01" element={<Navigate to="/dashboard" />} />
         
         {/* Dashboard Route */}
         <Route path="/dashboard" element={<Dashboard />} />
