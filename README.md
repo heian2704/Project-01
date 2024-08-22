@@ -2,7 +2,7 @@
 
 ### By Hein Thant (6430047) and Thaw Htut Soe (6511102)
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue.svg)](URL_TO_GITHUB_REPO)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/heian2704/Project-01/tree/main/car-analytics)
 
 ## Table of Contents
 
