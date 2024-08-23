@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ae163c0e-5ee7-4404-8647-7ecc12ac0aac)# 🚗 Project 01: Car Analytics Web App
+# 🚗 Project 01: Car Analytics Web App
 
 ### By Hein Thant (6430047) and Thaw Htut Soe (6511102)
 
