@@ -12,6 +12,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
+- [Video Demo](#video-demo)
 - [Deployment](#deployment)
 - [Extra Requirements](#extra-requirements)
 - [Contributors](#contributors)
@@ -101,7 +102,8 @@ To run this project locally:
 ![image](https://github.com/user-attachments/assets/78b1dbbc-2748-4b42-b420-bf6efba2cd96)
 ![image](https://github.com/user-attachments/assets/323a620c-6d6c-4d3e-9411-7141ef0d06a4)
 
-
+## Video-demo
+[Car Analytics Demo](https://www.youtube.com/watch?v=WuNDgYkljWY)
 
 ## Deployment
 
