@@ -1,4 +1,4 @@
-# 🚗 Project 01: Car Analytics Web App
+![image](https://github.com/user-attachments/assets/ae163c0e-5ee7-4404-8647-7ecc12ac0aac)# 🚗 Project 01: Car Analytics Web App
 
 ### By Hein Thant (6430047) and Thaw Htut Soe (6511102)
 
@@ -88,6 +88,14 @@ To run this project locally:
 ## Screenshots
 
 - ### Dashboard Page
+![image](https://github.com/user-attachments/assets/e4822dec-84ae-448b-bf62-7d2caf9bc9e9)
+![image](https://github.com/user-attachments/assets/a72e9731-d0ec-4321-8cad-93b921edc953)
+![image](https://github.com/user-attachments/assets/0eeb0143-9295-4cd7-9191-a047fd43a757)
+![image](https://github.com/user-attachments/assets/394a054b-dd27-4238-a254-8fbc8d293a85)
+![image](https://github.com/user-attachments/assets/e2af35f2-d240-4ed6-a4ca-bf32904d7a96)
+![image](https://github.com/user-attachments/assets/78b1dbbc-2748-4b42-b420-bf6efba2cd96)
+![image](https://github.com/user-attachments/assets/92dc6553-c7b2-42c1-b8f4-d5184cc3d41e)
+
 
 
 - ### Highlighted Cars Page
