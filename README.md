@@ -93,12 +93,14 @@ To run this project locally:
 ![image](https://github.com/user-attachments/assets/0eeb0143-9295-4cd7-9191-a047fd43a757)
 ![image](https://github.com/user-attachments/assets/394a054b-dd27-4238-a254-8fbc8d293a85)
 ![image](https://github.com/user-attachments/assets/e2af35f2-d240-4ed6-a4ca-bf32904d7a96)
-![image](https://github.com/user-attachments/assets/78b1dbbc-2748-4b42-b420-bf6efba2cd96)
-![image](https://github.com/user-attachments/assets/92dc6553-c7b2-42c1-b8f4-d5184cc3d41e)
+![image](https://github.com/user-attachments/assets/ce7d1598-b326-4c9a-a78c-ca02fe0fa126)
 
 
 
 - ### Highlighted Cars Page
+![image](https://github.com/user-attachments/assets/78b1dbbc-2748-4b42-b420-bf6efba2cd96)
+![image](https://github.com/user-attachments/assets/323a620c-6d6c-4d3e-9411-7141ef0d06a4)
+
 
 
 ## Deployment
